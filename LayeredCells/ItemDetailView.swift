@@ -27,6 +27,7 @@ struct ItemDetailView: View {
                 Text(item.title)
                     .font(.largeTitle)
                     .bold()
+                    .frame(maxWidth: .infinity)
                     .matchedGeometryEffect(id: "title \(item.id)", in: namespace)
                 Text("By \(item.author)")
                     .font(.title2)
