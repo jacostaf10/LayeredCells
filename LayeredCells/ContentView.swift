@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ItemCarousel(items: sampleItems)
-            .padding(.top, 25)
+        TabView {
+            ItemCarousel(items: sampleItems)
+                .padding(.top, 25)
+                .tabItem {
+                    Label("Sync", systemImage: "arrow.down")
+                }
+            AsyncItemCarousel()
+                .padding(.top, 25)
+                .tabItem {
+                    Label("Async", systemImage: "arrow.up.arrow.down")
+                }
+        }
     }
 }
 

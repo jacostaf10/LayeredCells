@@ -17,3 +17,7 @@ let sampleItems: [Item] = [ Item(title: "Dungeons & Dragons", image: "Book 1", a
                             Item(title: "Love Potions", image: "Book 4", author: "Bloody Mary", rating: 1.2),
                             Item(title: "The Prisoner's Dillema", image: "Book 5", author: "L. DaVinci", rating: 4.7)
 ]
+
+extension Pokemon {
+    static let test = Pokemon(name: "Pikachu", type: ["Electric"], imageURL: URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png")!)
+}
