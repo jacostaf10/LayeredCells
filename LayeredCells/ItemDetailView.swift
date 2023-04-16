@@ -54,7 +54,7 @@ struct ItemDetailView: View {
     }
         .overlay(alignment: .topTrailing) {
             Button {
-                withAnimation(.spring()){
+                withAnimation(.spring(response: 0.6, dampingFraction: 0.7, blendDuration: 0.7)){
                     item = nil
                 }
             } label: {

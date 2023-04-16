@@ -21,7 +21,7 @@ struct ItemCarousel: View {
                     ForEach(items) {item in
                         ItemCardView(namespace: namespace, item: item)
                             .onTapGesture {
-                                withAnimation(.spring()){
+                                withAnimation(.spring(response: 0.6, dampingFraction: 0.7, blendDuration: 0.7)){
                                     selectedItem = item
                                 }
                             }
